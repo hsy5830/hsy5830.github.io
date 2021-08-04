@@ -1,0 +1,31 @@
+<Lecture1>
+    [Introduction]
+    동영상 : Supervised learning
+    동영상 : Unsupervised learning
+
+<Lecture2>
+    [Model and Cost Function]
+    동영상 : Model Representation
+    동영상 : Cost Function
+        how to choose param.  (y=ax+b)
+    동영상 : Cost function - Intuition 1
+    동영상 : Cost function - Intuition 2
+        hypothesis -> param 구해야 해, 어떻게? -> cost function 이용 -> cost function을 minimize하는 param을 선택.
+    
+    [Parameter Learning]
+    동영상 : Gradient Descent
+        cost func 최소화 어떻게해? : (a1, a2)에서 시작 -> J(a,b)가 감소하는 방향으로 (a,b)조금씩 변경
+        learning rate (size of each step)
+        direction : with partial derivative at (a,b)
+
+<Lecture3>
+    PASS
+
+<Lecture4>
+    [Multivariate Linear Regression]
+    동영상 : Gradient Descent for Multiple Variables
+    동영상 : Gradient Descent in Practice I - Feature Scaling
+        Feature Scaling, Mean normalization
+    [Gradient Descent in Practice II - Learning Rate]
+        Debugging, how to choose alpha
+        not working : 
