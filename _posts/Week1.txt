@@ -26,6 +26,11 @@
     동영상 : Gradient Descent for Multiple Variables
     동영상 : Gradient Descent in Practice I - Feature Scaling
         Feature Scaling, Mean normalization
-    [Gradient Descent in Practice II - Learning Rate]
+    동영상 : Gradient Descent in Practice II - Learning Rate
         Debugging, how to choose alpha
         not working : 
+    동영상 : Features and Polynomial Regression
+
+    [Computin Parameters Anlytically]
+    동영상 : Normal Equation
+    동영상 : Normal Equation Noninvertibility
