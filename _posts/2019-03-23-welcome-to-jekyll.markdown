@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Seungyeop Hyun's github blog"
 date:   2021-06-04 20:00:00 +0530
 categories: Github
