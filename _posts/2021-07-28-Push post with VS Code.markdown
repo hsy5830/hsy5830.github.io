@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "VS Code 이용하여 깃허브 블로그에 포스트하기"
 date:   2021-07-28 19:27:00 +0530
 categories: Github
