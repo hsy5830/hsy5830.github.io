@@ -13,8 +13,9 @@ Here is my <br>
 [사진](/assets/images/a12.jpg)
 
 2021.07.31
-4
+4 <br>
 
+$y=f(x)$
 
 <!--   참고용
 ```javascript
