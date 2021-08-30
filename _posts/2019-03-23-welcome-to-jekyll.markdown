@@ -5,6 +5,7 @@ date:   2021-06-04 20:00:00 +0530
 categories: Github
 tags : [Github, 'Minimal mistakes']
 ---
+
 Hello, my name is Seungyeop Hyun. I'm majoring in statistics in SNU as a graduate school student. I received my B.S. degree in Department of Statistics in HUFS. 
 
 Here is my <br>
