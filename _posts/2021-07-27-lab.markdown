@@ -6,7 +6,7 @@ categories: Github
 tags : [Github, 'Minimal mistakes']
 toc: true
 toc_sticky: true
-toc_labe: "Contents"
+toc_label: "Contents"
 ---
 
 실험용 페이지
@@ -20,7 +20,9 @@ toc_labe: "Contents"
 $y=f(x)$
 
 # 1번 목차
+----
 1111
 
 # 2번 목차
+---
 2222
