@@ -312,6 +312,10 @@ nav {
 
   a {
     text-decoration: none;
+    // 밑줄제거
+    &:focus {
+      @extend %tab-focus;
+    }
   }
 
   /* override white-space for nested lists */

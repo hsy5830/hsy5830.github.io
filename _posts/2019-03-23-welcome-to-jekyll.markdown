@@ -10,13 +10,7 @@ Hello, my name is Seungyeop Hyun. I'm majoring in statistics in SNU as a graduat
 
 Here is my <br>
 [CV](/assets/CV_youp.pdf)
-<br>
-[사진](/assets/images/a12.jpg)
 
-2021.07.31
-4 <br>
-
-$y=f(x)$
 
 <!--   참고용
 ```javascript
