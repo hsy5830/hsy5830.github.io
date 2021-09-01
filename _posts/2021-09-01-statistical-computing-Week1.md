@@ -6,12 +6,6 @@ categories: "통계계산"
 tags : Julia
 ---
 
-# 고급통계계산
-
-Calendar: yes
-Contents: 고급통계계산 Julia install
-Date: September 1, 2021
-
 # Introduction to Julia, part1
 
 ## Types of programming languages
