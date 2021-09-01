@@ -56,7 +56,7 @@ toc_label: "Contents"
 
     사용하고자 하는 폰트를 가장 앞에 적어준다.
 
- <br><br><br><br>   
+<br><br><br><br>   
 
 # 폰트 크기 변경
 ---
