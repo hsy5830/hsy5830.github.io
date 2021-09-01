@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "[Advanced Statistical Computing] Introduction"
-date:   2021-07-28 19:27:00 +0530
+date:   2021-09-01 16:27:00 +0530
 categories: "통계계산"
 tags : Julia
 toc: true
