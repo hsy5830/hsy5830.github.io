@@ -40,6 +40,7 @@ toc_label: "Contents"
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
       ```
 
+
 2. 폰트 적용
 
     `_sass/_variables.scss` 
