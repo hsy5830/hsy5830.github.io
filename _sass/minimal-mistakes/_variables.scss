@@ -65,8 +65,8 @@ $red: #ff0000 !default;
 
 
 $background-color: rgb(255, 255, 255) !default; // 블로그 배경 색깔
-$code-background-color: #fafafa !default;
-$code-background-color-dark: $red !default;
+$code-background-color: $red !default;
+$code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
 $muted-text-color: mix(#fff, $text-color, 20%) !default;
 $border-color: $lighter-gray !default;
