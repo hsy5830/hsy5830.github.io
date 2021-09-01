@@ -9,6 +9,7 @@ toc_sticky: true
 toc_label: "Contents"
 ---
 
+<br><br>
 
 # 폰트 변경
 ---
@@ -34,6 +35,7 @@ toc_label: "Contents"
 
     ```html
     <head>
+        
         {% include head.html %}
         {% include head/custom.html %}
 
