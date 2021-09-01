@@ -27,18 +27,45 @@ $y=f(6x)$
 ---
 2222
 
-1. 1번이요
 
-    - fjs
+1. 이건 또 왜안되누??
 
-    - fllai
+- CSS
+
+    `assets/main.scss` 에서 원하는 폰트 코드 추가
+
+    ```scss
+    @import url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+    @font-face {
+        font-family: 'RIDIBatang';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    ```
+
+- HTML
+
+    `_layouts/default.html` 에서 원하는 폰트 코드 추가
+
+    ```xml
+    <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    ```
 
 
+2. 폰트 적용
 
-2. 2번이요
-    이거 맞습니까 <br>
-    정말 맞아요?<br>
-    네?<br>
+    `_sass/_variables.scss` 
 
+    ```scss
+    /* system typefaces */
+    $serif: Georgia, Times, serif !default;
+    $sans-serif: "RIDIBatang","Iropke Batang", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+      "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+    $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+    $youp: "Cafe24Oneprettynight" !default;
+    ```
 
-3. 3번이요
+    사용하고자 하는 폰트를 가장 앞에 적어준다.
