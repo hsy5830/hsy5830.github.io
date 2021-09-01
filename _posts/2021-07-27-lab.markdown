@@ -2,8 +2,8 @@
 layout: single
 title:  "실험용 페이지"
 date:   2021-07-27 20:00:00 +0530
-categories: Github
-tags : [Github, 'Minimal mistakes']
+categories: 통계계산
+tags : [Github, 'Minimal mistakes', Julia]
 toc: true
 toc_sticky: true
 toc_label: "Contents"
