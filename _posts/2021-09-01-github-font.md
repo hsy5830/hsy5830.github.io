@@ -42,6 +42,30 @@ toc_label: "Contents"
 
 2. 이건 또 왜안되누??
 
+  - CSS
+
+      `assets/main.scss` 에서 원하는 폰트 코드 추가
+
+      ```scss
+      @import url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+      @font-face {
+          font-family: 'RIDIBatang';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
+      ```
+
+  - HTML
+
+      `_layouts/default.html` 에서 원하는 폰트 코드 추가
+
+      ```xml
+      <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+      ```
+
 
 2. 폰트 적용
 
