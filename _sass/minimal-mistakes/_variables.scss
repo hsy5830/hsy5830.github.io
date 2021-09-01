@@ -56,16 +56,17 @@ $h-size-6: 1em !default; // ~16px
    Colors
    ========================================================================== */
 
-$gray: #7a8288 !default;
+$gray: #887a7a !default;
 $dark-gray: mix(#000, $gray, 50%) !default;
 $darker-gray: mix(#000, $gray, 60%) !default;
 $light-gray: mix(#fff, $gray, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
+$red: #ff0000 !default;
 
 
 $background-color: rgb(255, 255, 255) !default; // 블로그 배경 색깔
 $code-background-color: #fafafa !default;
-$code-background-color-dark: $light-gray !default;
+$code-background-color-dark: $red !default;
 $text-color: $dark-gray !default;
 $muted-text-color: mix(#fff, $text-color, 20%) !default;
 $border-color: $lighter-gray !default;
