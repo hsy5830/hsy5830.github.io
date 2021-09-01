@@ -40,6 +40,8 @@ toc_label: "Contents"
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
       ```
 
+2. 이건 또 왜안되누??
+
 
 2. 폰트 적용
 
@@ -55,6 +57,8 @@ toc_label: "Contents"
     ```
 
     사용하고자 하는 폰트를 가장 앞에 적어준다.
+
+3. 왜안되누??
 
 <br><br><br><br>   
 
