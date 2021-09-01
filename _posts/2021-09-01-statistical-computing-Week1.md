@@ -4,6 +4,9 @@ title:  "[Advanced Statistical Computing] Introduction"
 date:   2021-07-28 19:27:00 +0530
 categories: "통계계산"
 tags : Julia
+toc: true
+toc_sticky: true
+toc_label: "Contents"
 ---
 
 # Introduction to Julia, part1
