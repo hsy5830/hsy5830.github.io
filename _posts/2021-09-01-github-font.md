@@ -42,7 +42,7 @@ toc_label: "Contents"
 
 2. 이건 또 왜안되누??
 
-  - CSS
+   - CSS
 
       `assets/main.scss` 에서 원하는 폰트 코드 추가
 
@@ -56,7 +56,7 @@ toc_label: "Contents"
       }
       ```
 
-  - HTML
+   - HTML
 
       `_layouts/default.html` 에서 원하는 폰트 코드 추가
 
