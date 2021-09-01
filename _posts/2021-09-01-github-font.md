@@ -35,13 +35,11 @@ toc_label: "Contents"
       `_layouts/default.html` 에서 원하는 폰트 코드 추가
 
       ```xml
-      {% include head.html %}
-      {% include head/custom.html %}
-
       <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
       <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
       ```
+
 2. 폰트 적용
 
     `_sass/_variables.scss` 
