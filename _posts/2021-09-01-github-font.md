@@ -34,7 +34,7 @@ toc_label: "Contents"
 
       `_layouts/default.html` 에서 원하는 폰트 코드 추가
 
-      ```html
+      ```xml
       {% include head.html %}
       {% include head/custom.html %}
 
@@ -42,12 +42,6 @@ toc_label: "Contents"
       <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
       ```
-      
-      ```html
-      aaa
-      ```
-
-
 2. 폰트 적용
 
     `_sass/_variables.scss` 
