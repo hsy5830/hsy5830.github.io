@@ -34,15 +34,12 @@ toc_label: "Contents"
     `_layouts/default.html` 에서 원하는 폰트 코드 추가
 
     ```html
-    <head>
-        
-        {% include head.html %}
-        {% include head/custom.html %}
+    {% include head.html %}
+    {% include head/custom.html %}
 
-        <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
-        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
-    </head>
+    <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
     ```
 
 <br><br>
