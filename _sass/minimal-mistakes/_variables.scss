@@ -64,7 +64,7 @@ $light-gray: mix(#fff, $red, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
 
 
-$background-color: rgb(255, 255, 255) !default;
+$background-color: rgb(255, 255, 255) !default; // 블로그 배경 색깔
 $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
