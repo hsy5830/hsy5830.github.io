@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "[Advanced Statistical Computing] Introduction"
+title:  "Github blog - 폰트 추가, 폰트 적용, 포스트 제목 밑줄 제거"
 date:   2021-09-01 20:31:00 +0530
 categories: "Github"
 tags : [Github, "Minimal mistakes"]
@@ -14,34 +14,36 @@ toc_label: "Contents"
 ---
 
 1. 폰트 추가
-    - CSS
+- CSS
 
-        `assets/main.scss` 에서 원하는 폰트 코드 추가
+    `assets/main.scss` 에서 원하는 폰트 코드 추가
 
-        ```scss
-        @import url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
-        @font-face {
-            font-family: 'RIDIBatang';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        ```
+    ```scss
+    @import url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+    @font-face {
+        font-family: 'RIDIBatang';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    ```
 
-    - HTML
+- HTML
 
-        `_layouts/default.html` 에서 원하는 폰트 코드 추가
+    `_layouts/default.html` 에서 원하는 폰트 코드 추가
 
-        ```html
-        <head>
-            {% include head.html %}
-            {% include head/custom.html %}
+    ```html
+    <head>
+        {% include head.html %}
+        {% include head/custom.html %}
 
-            <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
-            <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
-        </head>
-        ```
+        <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    </head>
+    ```
+
+<br><br>
 
 2. 폰트 적용
 
@@ -57,6 +59,8 @@ toc_label: "Contents"
     ```
 
     사용하고자 하는 폰트를 가장 앞에 적어준다.
+
+ <br><br><br><br>   
 
 # 폰트 크기 변경
 ---
@@ -86,6 +90,8 @@ tml {
   -ms-text-size-adjust: 100%;
 }
 ```
+
+<br><br><br><br>
 
 # 포스트 제목 밑줄 제거
 ---
