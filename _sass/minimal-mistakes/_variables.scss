@@ -65,9 +65,11 @@ $red: #ff0000 !default;
 
 
 $background-color: rgb(255, 255, 255) !default; // 블로그 배경 색깔
-$code-background-color: #fafafa !default;
+$code-background-color: $dark-gray !default; // 인라인 코드 배경
+// $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
-$text-color: $dark-gray !default;
+$text-color: #e66464 !default; // 인라인 코드 text
+//$text-color: $dark-gray !default;
 $muted-text-color: mix(#fff, $text-color, 20%) !default;
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
