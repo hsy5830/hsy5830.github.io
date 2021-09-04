@@ -1,10 +1,12 @@
 ---
-layout: archive
+layout: tags
 permalink: /tags/
 title: "Posts by Tag"
 author_profile: true
 sidebar_main: true
 ---
+
+<!-- 
 {% include group-by-array collection=site.posts field="tags" %}
 <ul>
   {% for tag in site.tags %}
@@ -23,4 +25,5 @@ sidebar_main: true
   {% for post in posts %}
     {% include archive-single.html %}
   {% endfor %}
-{% endfor %}
+{% endfor %} 
+-->
