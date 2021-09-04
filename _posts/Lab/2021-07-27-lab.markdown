@@ -17,7 +17,7 @@ toc_label: "Contents"
 2021.07.31
 4 <br>
 
-$y=f(0x)$
+$y=f(3x)$
 
 # 1번 목차
 ----
