@@ -26,7 +26,7 @@
         <span class="nav__sub-title">Lecture</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "통계계산" %}
+                    {% if category[0] == "statcom" %}
                         <li><a href="/categories/statcom" class="">통계계산 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
