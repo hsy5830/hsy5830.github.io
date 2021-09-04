@@ -15,6 +15,7 @@ toc_label: "Contents"
 ---
 
 원하는 폰트는 [눈누](https://noonnu.cc)에서 찾아 웹폰트로 사용할 수 있는 코드를 복사해둔다. 사이트에서 폰트를 골라 직접 글씨를 타이핑해서 볼 수 있다.<br>
+<br>
 내가 선택한 폰트는 `리디바탕체` 이다.
 
 1. 폰트 추가
@@ -43,6 +44,7 @@ toc_label: "Contents"
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
       ```
 
+<br><br>
 
 2. 폰트 적용
 
