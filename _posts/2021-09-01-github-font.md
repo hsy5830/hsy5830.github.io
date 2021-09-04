@@ -18,6 +18,8 @@ toc_label: "Contents"
 <br>
 내가 선택한 폰트는 `리디바탕체` 이다.
 
+<br>
+
 1. 폰트 추가
 
    - CSS
@@ -44,7 +46,7 @@ toc_label: "Contents"
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
       ```
 
-<br><br>
+<br>
 
 2. 폰트 적용
 
