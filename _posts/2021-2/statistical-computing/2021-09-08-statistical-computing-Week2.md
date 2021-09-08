@@ -478,7 +478,7 @@ myfunc.(x)
 * `Number`의 타입들
 
     <p align="center">
-        <img src="/assets/images/a12.jpg">
+        <img src="/assets/images/a12.jpg" height="100px" width="300px">
     </p>
 
 
