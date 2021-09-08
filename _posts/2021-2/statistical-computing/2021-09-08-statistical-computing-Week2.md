@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "[Advanced Statistical Computing] Julia Introduction 2"
-date:   2021-09-01 16:27:00 +0530
+date:   2021-09-08 14:48:00 +0530
 categories: Statcom
 tags : Julia
 toc: true
@@ -469,24 +469,73 @@ myfunc.(x)
     sum(x -> sqrt(x), x)
     ```
 
+<br><br>
+
 # Type system
 
 `Any` : Julia에서 모든 타입은 abstract type 'Any'의 subtype이다.
 
 * `Number`의 타입들
 
+    <p align="center">
+        <img src="/assets/images/julia_type.jpg">
+    </p>
+
+
+`typeof()`, `supertype()`, `subtypes()` 함수를 이용해 객체의 타입을 알 수 있다.<br>
+<br>
+
+데이터의 타입을 변화하는 방법
+```julia
+convert(Float64, 1) # 1.0
+
+x = randn(Float32, 5) # float32형 5x1 벡터
+convert(Array{Float64}, x)
+Float64.(x)
+```
+<br><br>
+
+# Multiple dispatch
+
+간단하게 말하면, 함수에 들어오는 input argument 타입에 유연하게 적용되는 성질을 말한다. 예를 들어, 더하는 과정을 생각해보자. `2+2`, `2.0+2.0` 은 우리가 눈으로 보기엔 간단하지만, 프로그래밍 언어의 함수에선 매우 다른 문제이다. `+`함수에 들어올 수 있는 인자의 타입은 굉장이 여러가지가 있을 수 있고 각각의 경우에 대한 특정 동작을 제공함으로써 이를 구분할 수 있다. 이러한 행동의 정의를 `method`라고 한다.<br>
+<br>
+함수가 실행될 때 메서드의 선택을 `dispatch`라고 한다. 들어온 인자의 타입에 따라 어떤 메서드를 이용할지가 선택된다. 함수의 인자들을 모두 이용하여 함수의 첫 번째 메서드가 아닌 메서드를 선택하는 것이 `multiple dispatch`로 알려져 있다. input argument의 타입이 정해지지 않은 함수를 `generic function`이라고 한다.<br>
+<br>
+
+`methods(function_name)`, `@which functionc(x)` 로 method를 살펴볼 수 있다.
+```julia
+methods(sum)
+```
+```
+# 14 methods for generic function sum:
+sum(x::Tuple{Any, Vararg{Any, N} where N}) in Base at tuple.jl:474
+sum(x::AbstractSparseVector{Tv, Ti} where {Tv, Ti}) in SparseArrays at /Applications/Julia-1.6.app/Contents/Resources/julia/share/julia/stdlib/v1.6/SparseArrays/src/sparsevector.jl:1357
+sum(r::StepRangeLen{var"#s79", var"#s78", var"#s77"} where {var"#s79", var"#s78"<:Base.TwicePrecision, var"#s77"<:Base.TwicePrecision}) in Base at twiceprecision.jl:553
+sum(r::StepRangeLen) in Base at twiceprecision.jl:538
+sum(r::AbstractRange{var"#s79"} where var"#s79"<:Real) in Base at range.jl:1068
+sum(a::AbstractArray{Bool, N} where N; kw...) in Base at reduce.jl:529
+sum(arr::AbstractArray{BigInt, N} where N) in Base.GMP at gmp.jl:634
+sum(arr::AbstractArray{BigFloat, N} where N) in Base.MPFR at mpfr.jl:716
+sum(a::AbstractArray; dims, kw...) in Base at reducedim.jl:873
+sum(::typeof(abs), x::AbstractSparseVector{Tv, Ti} where {Tv, Ti}) in SparseArrays at /Applications/Julia-1.6.app/Contents/Resources/julia/share/julia/stdlib/v1.6/SparseArrays/src/sparsevector.jl:1382
+sum(::typeof(abs2), x::AbstractSparseVector{Tv, Ti} where {Tv, Ti}) in SparseArrays at /Applications/Julia-1.6.app/Contents/Resources/julia/share/julia/stdlib/v1.6/SparseArrays/src/sparsevector.jl:1382
+sum(a; kw...) in Base at reduce.jl:528
+sum(f, a::AbstractArray; dims, kw...) in Base at reducedim.jl:874
+sum(f, a; kw...) in Base at reduce.jl:501
+```
+
+```julia
+@which sum(1,3.0)
+```
+```
+sum(f, a; kw...) in Base at reduce.jl:501
+```
 
 
 
 
 
 
-
-
-
-
-<!-- 참고 : [https://won-j.github.io/M1399_000200-2021fall/](https://won-j.github.io/M1399_000200-2021fall/), Julia Intro 2 -->
-
-<p align="center">
-    <img src="/assets/images/a12.jpg">
-</p>
+[참고] : <br>
+[https://won-j.github.io/M1399_000200-2021fall/](https://won-j.github.io/M1399_000200-2021fall/), Julia Intro 2 <br>
+[https://juliakorea.github.io/ko/latest/manual/methods/](https://juliakorea.github.io/ko/latest/manual/methods/)
