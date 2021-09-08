@@ -531,10 +531,9 @@ sum(f, a; kw...) in Base at reduce.jl:501
 sum(f, a; kw...) in Base at reduce.jl:501
 ```
 
+<Br><Br>
 
-
-
-
+---
 
 [참고] : <br>
 [https://won-j.github.io/M1399_000200-2021fall/](https://won-j.github.io/M1399_000200-2021fall/), Julia Intro 2 <br>
