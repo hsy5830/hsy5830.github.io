@@ -31,19 +31,21 @@ pull하여 가져온 내용을 수정했을 땐 **push**하여 수정한 내용�
 
 2. Commit
 
-    Staged된 파일을 `commit`한 후 `push`하면 깃허브 블로그에 해당 내용이 반영된다. 마찬가지로 왼쪽의 'Source control' 탭에서 상단의 체크버튼을 눌러주면 `staged`됐던 내용들이 `commit`되어 로컬 저장소에 저장된다. 다음 단계로, 터미널에
-    ```
-    git push origin main
-    ```
-    을 입력하면 `commit`한 내용이 github로 `push`되어 원격 저장소에 저장된다.
+Staged된 파일을 `commit`한 후 `push`하면 깃허브 블로그에 해당 내용이 반영된다. 마찬가지로 왼쪽의 'Source control' 탭에서 상단의 체크버튼을 눌러주면 `staged`됐던 내용들이 `commit`되어 로컬 저장소에 저장된다. 다음 단계로, 터미널에
+```
+git push origin main
+```
+을 입력하면 `commit`한 내용이 github로 `push`되어 원격 저장소에 저장된다.
 
 # Push
 
-    다음 단계로, 터미널에
-    ```
-    git push origin main(or master)
-    ```
-    을 입력하면 `commit`한 내용이 github로 `push`되어 원격 저장소에 저장된다.
+다음 단계로, 터미널에
+
+```
+git push origin main(or master)
+```
+
+을 입력하면 `commit`한 내용이 github로 `push`되어 원격 저장소에 저장된다.
     
 <br><br>
 
