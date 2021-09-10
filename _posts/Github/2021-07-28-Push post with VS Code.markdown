@@ -4,6 +4,9 @@ title:  "VS Code 이용하여 깃허브 블로그에 포스트하기"
 date:   2021-07-28 19:27:00 +0530
 categories: Github
 tags : Github
+toc: true
+toc_sticky: true
+toc_label: "Contents"
 ---
 
 # Clone 하기 (or pull)
