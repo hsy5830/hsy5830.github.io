@@ -171,7 +171,9 @@ td > code {
   font-size: 0.8em;
   //background: $code-background-color;
   background: #dbdbdb; // 인라인 코드 배경 색상
-  color: $primary-color; // 인라인 코드 텍스트 색상
+  //color: $primary-color;
+  color: #001aff; // 인라인 코드 텍스트 색상
+  font-weight: bold;
   border-radius: $border-radius;
 
   &:before,
