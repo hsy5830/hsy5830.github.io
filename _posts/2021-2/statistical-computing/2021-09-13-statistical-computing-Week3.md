@@ -21,6 +21,8 @@ toc_label: "Contents"
     Pkg.status()
     ```
 
+<br><br>
+
 # Units of computer storage
 
 &nbsp;&nbsp;사람과 컴퓨터가 숫자를 사용하는 방식에는 차이가 있다. 간단하게 말하면 사람은 10진수를, 컴퓨터는 2진수를 사용한다. 왜 그럴까?<br>
@@ -59,7 +61,7 @@ x	78.164 KiB	100×100 Matrix{Float64}
 # Storage of Characters
 
 Character 타입이 저장되는 방법을 알아보자.<br>
-<br>
+
 
 ## ASCII
 <Br>
@@ -101,6 +103,7 @@ Character 타입이 저장되는 방법을 알아보자.<br>
     126  '~'
     127  '\x7f'
     ```
+<br>
 
 * Extended ASCII: 8bits, $2^8$=256
 
@@ -141,6 +144,7 @@ Character 타입이 저장되는 방법을 알아보자.<br>
     254  'þ'
     255  'ÿ'
     ```
+<br>
 
 * Unicode
 
@@ -155,10 +159,10 @@ Character 타입이 저장되는 방법을 알아보자.<br>
 
     Unicode 참조링크 : [https://docs.julialang.org/en/v1.1/manual/unicode-input/#Unicode-Input-1](https://docs.julialang.org/en/v1.1/manual/unicode-input/#Unicode-Input-1)
 
+<br><br>
 
 # Integers : fixed-point number system(고정 소수점)
 
-정수($\mathbb{Z}$)는 무수히 많은 수를 포함하고 있지만, 컴퓨터의 메모리는 그렇지 않다. 따라서 컴퓨터는 수를 저장할 때 근사를 이용하여 최대한 많은 수를 저장한다.<br>
-<br>
+&nbsp;&nbsp;정수($\mathbb{Z}$)는 무수히 많은 수를 포함하고 있지만, 컴퓨터의 메모리는 그렇지 않다. 따라서 컴퓨터는 수를 저장할 때 근사를 이용하여 최대한 많은 수를 저장한다.<br>
 
-상수 *M*은 비트 수를 뜻하고, 부호를 나타내는 방식에는 여러가지가 있다. 예를 들어, *M*=64 라면, 최대로 처리할 수 있는 비트 수가 $2^{64}$개인 것이다.
+&nbsp;&nbsp;상수 *M*은 비트 수를 뜻하고, 부호를 나타내는 방식에는 여러가지가 있다. 예를 들어, *M*=64 라면, 최대로 처리할 수 있는 비트 수가 $2^{64}$개인 것이다.
