@@ -533,6 +533,93 @@ sum(f, a; kw...) in Base at reduce.jl:501
 
 <Br><Br>
 
+
+# Just-in-time compilation (dynamic tarnslation)
+
+Julia의 컴파일 방식이다. 프로그래밍 언어는 컴파일 방법으로 크게 두 가지, `Interpreter` 와 `compliler` 가 있는데 JIT comilation 의 경우는 두 가지 방식이 섞인 것이라고 생각할 수 있다. 실행할 때 interpreter 방식으로 기계어 코드를 생성하고, 그 코드를 캐싱하여 같은 함수가 반복되면 코드를 새롭게 생성하는 것이 아니라 이미 만들어 놓은 기계어 코드를 불러와 사용한다.<br>
+<br>
+
+몇 가지 함수를 이용하여 low level의 코드를 확인할 수 있다. 위에서 정의한 g함수를 살펴보자.<br>
+<br>
+
+`@code_lowered` : AST(Abstract Syntax Tree, 추상구문트리) 보여준다.
+```julia
+@code_lowered g(2)
+```
+```
+CodeInfo(
+1 ─ %1 = x + x
+└──      return %1
+)
+```
+<br>
+
+`@code_warntype` : 함수에서 쓰이는 변수들의 type을 살펴볼 수 있다.
+```julia
+@code_warntype g(2)
+```
+```
+Variables
+  #self#::Core.Const(g)
+  x::Int64
+
+Body::Int64
+1 ─ %1 = (x + x)::Int64
+└──      return %1
+```
+
+```julia
+@code_warntype g(2.0)
+```
+```
+Variables
+  #self#::Core.Const(g)
+  x::Float64
+
+Body::Float64
+1 ─ %1 = (x + x)::Float64
+└──      return %1
+```
+<br>
+
+`@code_llvm` : 코드를 LLVM bytecode로 컴파일 <br>
+LLVM 코드는 인자의 타입에 따라 다르게 생성된다. `R`과 `Python`에선 g(2), g(2.0)이 같은 코드를 사용하지만, Julia에선 각각 `Int64`, `Float64`에 맞게 최적화된 코드를 사용한다.
+
+```julia
+@code_llvm g(2)
+# shl(shift left) : 이진수 코드를 왼쪽으로 넘긴다고 생각
+```
+```
+;  @ In[76]:1 within `g'
+define i64 @julia_g_4079(i64 signext %0) {
+top:
+; ┌ @ int.jl:87 within `+'
+   %1 = shl i64 %0, 1  # 이진수 왼쪽으로 한칸 (== 두배)
+; └
+  ret i64 %1
+}
+```
+<br>
+
+```julia
+@code_llvm g(2.0)
+```
+```
+;  @ In[75]:1 within `g'
+define double @julia_g_4104(double %0) {
+top:
+; ┌ @ float.jl:326 within `+'
+   %1 = fadd double %0, %0
+; └
+  ret double %1
+}
+```
+<br>
+
+`@code_native` : assembly code(lowest level)로 변환
+
+<br><br>
+
 ---
 
 [참고] : <br>
