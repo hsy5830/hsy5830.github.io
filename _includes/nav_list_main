@@ -31,6 +31,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title">Statistics</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Statistics" %}
+                        <li><a href="/categories/statistics" class="">통계학 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
   </ul>
 </nav>
