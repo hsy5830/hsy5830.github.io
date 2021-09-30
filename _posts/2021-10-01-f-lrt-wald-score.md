@@ -109,15 +109,22 @@ $$L_1 = L(\hat{\beta},\hat{\sigma^2)}, \;\; L_0 = L(\hat{\beta^*_1}, \hat{\sigma
 
 <br>
 
-가능도비검정을 위한 통계량 $\Chi$는 다음과 같이 정의된다.
+가능도비검정을 위한 통계량 $\Chi$ 는 다음과 같이 정의된다.
 
 $$
 \begin{align*}
-    -2 \log \Lambda &= -2 \log \frac {L_0}{L_1} \\
+    \Chi &= -2 \log \Lambda \\
+        &= -2 \log \frac {L_0}{L_1} \\
         &=-2\left( -\frac n2 \log \frac{\hat{\sigma^2}}{\hat{\sigma_0^2}} - \frac{1}{2\hat{\sigma_0^2}} (y-X_1\hat{\beta^*_1})'(y-X_1\hat{\beta^*_1}) + \frac{1}{2\hat{\sigma^2}} (y-X\hat{\beta})'(y-X\hat{\beta}) \right) \\
         &=-2\left( -\frac n2 \log \frac{\hat{\sigma^2}}{\hat{\sigma_0^2}} - \frac n2  + \frac n2 \right) \\
-        &= n \log \frac{\hat{\sigma_0^2}}{\hat{\sigma^2}}
+        &= n \log \frac{\hat{\sigma^2}}{\hat{\sigma_0^2}}
 \end{align*}
 $$
 
+또한 이 통계량은 카이제곱분포를 따르고, 자유도는 두 모형에서 추정하는 모수의 개수의 차이와 일치한다.
 
+$$\Chi = -2 \log \Lambda \sim \chi^2_{p-q}$$
+
+따라서 유의수준 $\alpha$의 검정에서, 만약 $\Chi> \chi^2_{p-q}(\alpha)$ 라면, 귀무가설 $H_0$를 기각한다.
+
+.
