@@ -32,10 +32,12 @@ $$H_0 : \beta_{q+1} = \dotsb = \beta_p = 0$$
 
 아무런 제약이 없는 상황에서 고려할 수 있는 전체모형(Full model, FM)과, 귀무가설 하에서 $\beta_{q+1} = \dotsb = \beta_p = 0$ 이 되므로, 이 때의 축소모형(Reduced model, RM)을 생각할 수 있다.
 
-\begin{align}
+$$
+\begin{align*}
     &(FM) \quad y = X_1\beta^*_1+X_2\beta^*_2 + \epsilon \\
     &(RM) \quad y = X_1\beta^*_1 + \epsilon
-\end{align}
+\end{align*}
+$$
 
 $$(FM) \quad y = X_1\beta^*_1+X_2\beta^*_2 + \epsilon$$
 $$(RM) \quad y = X_1\beta^*_1 + \epsilon$$
