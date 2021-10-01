@@ -9,9 +9,6 @@ toc_sticky: true
 toc_label: "Contents"
 ---
 
-
-$\beta^*_1 = ( \beta_0, \beta_1, \dotsb, \beta_q), \quad \beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$
-
 <br>
 
 # 모델 설명
@@ -24,7 +21,7 @@ $$y_i = \beta_0 + \beta_1 x_{1i} + \dotsb + \beta_q x_{qi} + \beta_{q+1} x_{(q+1
 
 $$y = X\beta + \epsilon = \left(X_1 X_2\right)\left(\begin{array}{c}\beta^*_1\\ \beta^*_2\end{array}\right) + \epsilon = X_1\beta^*_1+X_2\beta^*_2 + \epsilon, \; \epsilon \sim N(0, \sigma^2I_n)$$
 
-위 식의 $\beta$ 들은  $\beta^*_1 = ( \beta_{0}, \beta_{1}, \dotsb, \beta_q), \quad \beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$ 이다.
+위 식의 $\beta$ 들은  $\beta^*_1 = ( \beta_0, \beta_1, \dotsb, \beta_q)$,  $\beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$ 이다.
 
 <br>
 
@@ -108,7 +105,7 @@ $$\hat{\beta^*_1} = (X_1'X_1)^{-1}X_1'y,\;\;\hat{\sigma_0^2} = \frac 1n ||y-X_1\
 
 가능도비(likehood, L)은 
 
-$ \log L = (2\pi\sigma)^{-n/2}  exp(-(y-X\beta)'(y-X\beta)/2\sigma^2)$$
+$ \log L = (2\pi\sigma)^{-n/2}  exp(-(y-X\beta)'(y-X\beta)/2\sigma^2)$
 
 로 표현되는데, 각각의 상황에서의 Likelihood는
 
@@ -141,6 +138,7 @@ $$-2 \log \Lambda \sim \chi^2_{p-q}$$
 <br><br>
 
 # Wald
+
 
 우리는 $\beta = (\beta^*_1 \; \beta^*_2)$ , $\beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$ 에 대해서, 우리는 귀무가설 $H_0 : \beta^*_2=0$ 을 검정하려고 한다.
 
