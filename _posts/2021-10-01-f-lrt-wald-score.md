@@ -64,7 +64,7 @@ $$
 \end{align*}
 $$
 
-이고 추가적으로 
+이고 추가적으로 $SSR_F = SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1}$
 
 $$SSR_F = SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1}$$ 
 
@@ -150,7 +150,11 @@ $$-2 \log \Lambda \sim \chi^2_{p-q}$$
 # Wald
 
 
-우리는 $\beta = (\beta^*_1 \; \beta^*_2)$ , $\beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$ 에 대해서, 우리는 귀무가설 $H_0 : \beta^*_2=0$ 을 검정하려고 한다.
+$$\beta = (\beta^*_1 \; \beta^*_2), \quad \beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$$ 
+
+에 대해서, 우리는 귀무가설 $H_0 : \beta^*_2=0$ 을 검정하려고 한다.
+
+<br>
 
 일반적으로 $H_0 : \beta = \beta_0$ 를 검정할 때 사용하는 Wald 통계량은
 
@@ -185,7 +189,11 @@ $$W \sim \chi^2_{p-q}$$
 
 $$u(\beta) = \left(\frac{\partial \log L}{\partial \beta_0}, \frac{\partial \log L}{\partial \beta_1}, \dotsb, \frac{\partial \log L}{\partial \beta_p}\right)^T = (u_1(\beta^*_1, \beta^*_2)^T, \; u_2(\beta^*_1, \beta^*_2)^T)^T$$
 
-이고, $\beta^*_0 = (\beta_0, \beta_1, \dotsb, \beta_q, 0, \dotsb, 0) = (\beta^*_1, \underset{\hat{}}{0})$ 라고 하면, Score 통계량은 
+이고, 
+
+$$\beta^*_0 = (\beta_0, \beta_1, \dotsb, \beta_q, 0, \dotsb, 0) = (\beta^*_1, \underset{\hat{}}{0})$$ 
+
+1111라고 하면, Score 통계량은 
 
 $$S = u(\beta^*_0)'[I(\beta^*_0)]^{-1}u(\beta^*_0)$$ 
 
