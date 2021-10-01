@@ -40,6 +40,7 @@ $$H_0 : \beta_{q+1} = \dotsb = \beta_p = 0$$
 <br><br>
 
 # F-test
+---
 
 설명을 위해 $J = \underset{\tilde{}}{1}\underset{\tilde{}}{1}', \;\;H = X(X'X)^{-1}X', \;\; H_1 = X_1(X_1'X_1)^{-1}X_1'$ 을 정의한다.
 
@@ -97,6 +98,7 @@ $$
 <br><br>
 
 # LRT(Likelihood Ratio Test)
+---
 
 $\beta, \sigma^2$의 MLE(Maximum Likelihood Estimator)는 각각 다음과 같다.
 
@@ -120,7 +122,7 @@ $$L_1 = L(\hat{\beta},\hat{\sigma^2)}, \;\; L_0 = L(\hat{\beta^*_1}, \hat{\sigma
 
 <br>
 
-가능도비검정을 위한 통계량은 다음과 같이 정의된다.
+가능도비검정을 위한 `LRT 통계량`은 다음과 같이 정의된다.
 
 $$
 \begin{align*}
@@ -143,7 +145,7 @@ $$-2 \log \Lambda \sim \chi^2_{p-q}$$
 <br><br>
 
 # Wald
-
+---
 
 $$\beta = (\beta^*_1 \; \beta^*_2), \quad \beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$$ 
 
@@ -174,11 +176,14 @@ $$
 
 $$W \sim \chi^2_{p-q}$$ 
 
+<br>
+
 이므로, 유의수준 $\alpha$ 검정에서 만약 $W > \chi^2_{p-q}(\alpha)$ 이면, 귀무가설 $H_0$를 기각한다.
 
 <br><br>
 
 # Score
+---
 
 우선 score funtion 을 정의하자.
 
@@ -249,6 +254,9 @@ $$S \sim \chi^2_{p-q}$$
 <br><br>
 
 # 주의할 점 (다른 귀무가설 상황의 경우)
+---
+
+<br>
 
 위에서 설명한 검정은 여러가지 조건 덕분에 과정이 편하게 진행되었다. 예를 들어,
 
@@ -286,6 +294,5 @@ $$S \sim \chi^2_{p-q}$$
 ---
 
 [참고] : <br>
-
 [https://j0shuajun.github.io](https://j0shuajun.github.io)<br>
 [326.520A: Applied Statistics](https://jung.snu.ac.kr/syllabus/syllabus_appstat.pdf)
