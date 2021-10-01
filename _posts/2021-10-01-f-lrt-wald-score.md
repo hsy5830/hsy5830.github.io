@@ -60,7 +60,7 @@ $$
     SST &= y'\left(I-\frac Jn\right)y \\
         &= y'\left(I-H\right)y + y'\left(H-\frac Jn\right)y \\
         &= y'\left(I-H\right)y + y'\left(H-H_1\right)y + y'\left(H_1-\frac Jn\right)y \\
-        &= SSE_F + SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1},; (SSR_F = SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1})
+        &= SSE_F + SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1}, \; (SSR_F = SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1})
 \end{align*}
 $$
 
@@ -155,7 +155,7 @@ $$\beta = (\beta^*_1 \; \beta^*_2), \quad \beta^*_2 = (\beta_{q+1}, \dotsb, \bet
 
 $$W = (\hat{\beta} - \beta_0)'[\widehat{cov}(\hat{\beta})]^{-1}(\hat{\beta} - \beta_0)$$
 
-인데, 우리가 다루고 있는 문제의 상황에 적용해보면 Wald 통계량은
+인데, 우리가 다루고 있는 문제의 상황에 적용해보면 `Wald 통계량`은
 
 $$ W = \hat{\beta^*_2}'[\widehat{cov}(\hat{\beta^*_2})]^{-1}\hat{\beta^*_2} $$
 
@@ -194,12 +194,13 @@ $$S = u(\beta^*_0)'[I(\beta^*_0)]^{-1}u(\beta^*_0)$$
 
 로 정의된다. 
 
-그런데 귀무가설 하에서, $\beta^*_2$ 의 값을 알고있다.
-하지만,  $\beta^*_1$ 에 대한 정보는 갖고있지 않기때문에 위의 통계량을 그대로 사용할 수 없다. 따라서 귀무가설 하에서의 $\hat{\beta^*_1}^{MLE}$ 를 추정값으로 사용한다.
+그런데 귀무가설 하에서, $\beta^*_2$ 의 값을 알고있다.<Br>
+하지만,  $\beta^*_1$ 에 대한 정보는 갖고있지 않기때문에 위의 통계량을 그대로 사용할 수 없다. <br>
+따라서 귀무가설 하에서의 $\hat{\beta^*_1}^{MLE}$ 를 추정값으로 사용한다.
 
 $$\hat{\beta^*_1}^{MLE} = (X_1'X_1)^{-1}X_1'y$$
 
-그렇다면 Score 통계량은,
+그렇다면 `Score 통계량은`,
 
 $$
 \begin{align*}
