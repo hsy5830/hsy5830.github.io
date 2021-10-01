@@ -9,6 +9,9 @@ toc_sticky: true
 toc_label: "Contents"
 ---
 
+
+$\beta^*_1 = ( \beta_0, \beta_1, \dotsb, \beta_q), \quad \beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$
+
 <br>
 
 # 모델 설명
@@ -174,8 +177,7 @@ $$W \sim \chi^2_{p-q}$$
 
 $$u(\beta) = \left(\frac{\partial \log L}{\partial \beta_0}, \frac{\partial \log L}{\partial \beta_1}, \dotsb, \frac{\partial \log L}{\partial \beta_p}\right)^T = (u_1(\beta^*_1, \beta^*_2)^T, \; u_2(\beta^*_1, \beta^*_2)^T)^T$$
 
-이고,
-$\beta^*_0 = (\beta_0, \beta_1, \dotsb, \beta_q, 0, \dotsb, 0) = (\beta^*_1, \underset{\hat{}}{0})$ 라고 하면, Score 통계량은 
+이고, $\beta^*_0 = (\beta_0, \beta_1, \dotsb, \beta_q, 0, \dotsb, 0) = (\beta^*_1, \underset{\hat{}}{0})$ 라고 하면, Score 통계량은 
 
 $$S = u(\beta^*_0)'[I(\beta^*_0)]^{-1}u(\beta^*_0)$$ 
 
