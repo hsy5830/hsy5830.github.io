@@ -9,7 +9,13 @@ toc_sticky: true
 toc_label: "Contents"
 ---
 
-$\beta^*_1 = ( \beta_0, \beta_1, \dotsb, \beta_q), \quad \beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$
+$\beta^*_1 = (\beta_0, \beta_1, \dotsb, \beta_q)$
+
+$ \quad \beta^*_2 = $
+
+$(\beta_{q+1}, \dotsb, \beta_p)$
+
+$y \sim \lambda \chi$
 
 실험용 페이지
 
