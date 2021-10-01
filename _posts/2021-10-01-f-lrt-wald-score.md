@@ -17,11 +17,11 @@ toc_label: "Contents"
 
 $$y_i = \beta_0 + \beta_1 x_{1i} + \dotsb + \beta_q x_{qi} + \beta_{q+1} x_{(q+1)i} + \dotsb + \beta_p x_{pi} + \epsilon_i, \quad \epsilon_i \stackrel{iid}{\sim} N(0,\sigma^2)$$
 
-이 모형은 행렬을 이용하면 다른 형식으로 나타낼 수 있다.
+행렬을 이용하여 나타내면,
 
 $$y = X\beta + \epsilon = \left(X_1 X_2\right)\left(\begin{array}{c}\beta^*_1\\ \beta^*_2\end{array}\right) + \epsilon = X_1\beta^*_1+X_2\beta^*_2 + \epsilon, \; \epsilon \sim N(0, \sigma^2I_n)$$
 
-$\beta^*_1 = (\beta_0, \beta_1, \dotsb, \beta_q)$, $\beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$
+위의 식의 $\beta$ 들은  $\beta^*_1 = (\beta_0, \beta_1, \dotsb, \beta_q), \quad \beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$ 이다.
 
 <br>
 
@@ -38,6 +38,7 @@ $$H_0 : \beta_{q+1} = \dotsb = \beta_p = 0$$
 설명을 위해 $J = \underset{\tilde{}}{1}\underset{\tilde{}}{1}', \;\;H = X(X'X)^{-1}X', \;\; H_1 = X_1(X_1'X_1)^{-1}X_1'$ 을 정의한다.
 
 Reduced Model으로 부터, $SST, SSE_R, SSR_R$의 제곱합들을 계산할 수 있다.
+
 $$
 \begin{align*}
     SST &= y'\left(I-\frac Jn\right)y \\
@@ -47,6 +48,7 @@ $$
 $$
 
 마찬가지로 Full Model로 부터,
+
 $$
 \begin{align*}
     SST &= y'\left(I-\frac Jn\right)y \\
@@ -74,7 +76,7 @@ $$
 
 <br>
 
-검정을 위한 검정통계량 `F`는 아래와 같이 정의 할 수 있다.
+검정을 위한 `검정통계량 F`는 아래와 같이 정의 할 수 있다.
 
 $$
 \begin{align*}
@@ -82,6 +84,8 @@ $$
     &= \frac {\frac{SSR_{\beta^*_2|\beta^*_1}}{\sigma^2}/(p-q)}{\frac{SSE_F}{\sigma^2}/(n-p-1)} \sim F_{p-q, n-p-1}
 \end{align*}
 $$
+
+<br>
 
 유의수준 $\alpha$의 검정에서, 만약 $F> F_{p-q, n-p-1}(\alpha)$ 라면, 귀무가설 $H_0$를 기각한다.
 
@@ -111,7 +115,7 @@ $$L_1 = L(\hat{\beta},\hat{\sigma^2)}, \;\; L_0 = L(\hat{\beta^*_1}, \hat{\sigma
 
 <br>
 
-가능도비검정을 위한 통계량 $\Chi$ 는 다음과 같이 정의된다.
+가능도비검정을 위한 통계량은 다음과 같이 정의된다.
 
 $$
 \begin{align*}
@@ -127,13 +131,15 @@ $$
 
 $$-2 \log \Lambda \sim \chi^2_{p-q}$$
 
+<br>
+
 따라서 유의수준 $\alpha$의 검정에서, 만약 $-2 \log \Lambda> \chi^2_{p-q}(\alpha)$ 라면, 귀무가설 $H_0$를 기각한다.
 
 <br><br>
 
 # Wald
 
-$\beta = (\beta^*_1 \; \beta^*_2)$ , $\beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$ 에 대해서, 우리는 귀무가설 $H_0 : \beta^*_2=0$ 을 검정하려고 한다.
+우리는 $\beta = (\beta^*_1 \; \beta^*_2)$ , $\beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$ 에 대해서, 우리는 귀무가설 $H_0 : \beta^*_2=0$ 을 검정하려고 한다.
 
 일반적으로 $H_0 : \beta = \beta_0$ 를 검정할 때 사용하는 Wald 통계량은
 
@@ -144,6 +150,7 @@ $$W = (\hat{\beta} - \beta_0)'[\widehat{cov}(\hat{\beta})]^{-1}(\hat{\beta} - \b
 $$ W = \hat{\beta^*_2}'[\widehat{cov}(\hat{\beta^*_2})]^{-1}\hat{\beta^*_2} $$
 
 이고, 구성하는 식들은 다음과 같다.
+
 $$
 \begin{align*}
     \hat{\beta^*_2} &= (\hat{\beta_{q+1}}, \dotsb, \hat{\beta_p}) \; of \; \hat{\beta} \\
@@ -167,14 +174,14 @@ $$W \sim \chi^2_{p-q}$$
 
 $$u(\beta) = \left(\frac{\partial \log L}{\partial \beta_0}, \frac{\partial \log L}{\partial \beta_1}, \dotsb, \frac{\partial \log L}{\partial \beta_p}\right)^T = (u_1(\beta^*_1, \beta^*_2)^T, \; u_2(\beta^*_1, \beta^*_2)^T)^T$$
 
-
+이고,
 $\beta^*_0 = (\beta_0, \beta_1, \dotsb, \beta_q, 0, \dotsb, 0) = (\beta^*_1, \underset{\hat{}}{0})$ 라고 하면, Score 통계량은 
 
 $$S = u(\beta^*_0)'[I(\beta^*_0)]^{-1}u(\beta^*_0)$$ 
 
 로 정의된다. 
 
-그런데 귀무가설 하에서, $\beta^*_2$의 값을 알지만 $\beta^*_1$에 대한 정보는 갖고있지 않기때문에 위의 통계량을 그대로 사용할 수 없다. 따라서 귀무가설 하에서의 $\hat{\beta^*_1}^{MLE}$를 추정값으로 사용한다.
+그런데 귀무가설 하에서, $\beta^*_2$ 의 값을 알지만 $\beta^*_1$ 에 대한 정보는 갖고있지 않기때문에 위의 통계량을 그대로 사용할 수 없다. 따라서 귀무가설 하에서의 $\hat{\beta^*_1}^{MLE}$ 를 추정값으로 사용한다.
 
 $$\hat{{\beta^*_1}}^{MLE} = (X_1'X_1)^{-1}X_1'y$$
 
