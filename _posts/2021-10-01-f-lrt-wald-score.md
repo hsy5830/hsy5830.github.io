@@ -60,15 +60,10 @@ $$
     SST &= y'\left(I-\frac Jn\right)y \\
         &= y'\left(I-H\right)y + y'\left(H-\frac Jn\right)y \\
         &= y'\left(I-H\right)y + y'\left(H-H_1\right)y + y'\left(H_1-\frac Jn\right)y \\
-        &= SSE_F + SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1}
+        &= SSE_F + SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1},; (SSR_F = SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1})
 \end{align*}
 $$
 
-이고 추가적으로 $SSR_F = SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1}$
-
-$$SSR_F = SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1}$$ 
-
-임을 알 수 있다.
 
 <br>
 
@@ -193,13 +188,14 @@ $$u(\beta) = \left(\frac{\partial \log L}{\partial \beta_0}, \frac{\partial \log
 
 $$\beta^*_0 = (\beta_0, \beta_1, \dotsb, \beta_q, 0, \dotsb, 0) = (\beta^*_1, \underset{\hat{}}{0})$$ 
 
-1111라고 하면, Score 통계량은 
+라고 하면, Score 통계량은 
 
 $$S = u(\beta^*_0)'[I(\beta^*_0)]^{-1}u(\beta^*_0)$$ 
 
 로 정의된다. 
 
-그런데 귀무가설 하에서, $\beta^*_2$ 의 값을 알지만 $\beta^*_1$ 에 대한 정보는 갖고있지 않기때문에 위의 통계량을 그대로 사용할 수 없다. 따라서 귀무가설 하에서의 $\hat{\beta^*_1}^{MLE}$ 를 추정값으로 사용한다.
+그런데 귀무가설 하에서, $\beta^*_2$ 의 값을 알고있다.
+하지만,  $\beta^*_1$ 에 대한 정보는 갖고있지 않기때문에 위의 통계량을 그대로 사용할 수 없다. 따라서 귀무가설 하에서의 $\hat{\beta^*_1}^{MLE}$ 를 추정값으로 사용한다.
 
 $$\hat{\beta^*_1}^{MLE} = (X_1'X_1)^{-1}X_1'y$$
 
