@@ -21,7 +21,13 @@ $$y_i = \beta_0 + \beta_1 x_{1i} + \dotsb + \beta_q x_{qi} + \beta_{q+1} x_{(q+1
 
 $$y = X\beta + \epsilon = \left(X_1 X_2\right)\left(\begin{array}{c}\beta^*_1\\ \beta^*_2\end{array}\right) + \epsilon = X_1\beta^*_1+X_2\beta^*_2 + \epsilon, \; \epsilon \sim N(0, \sigma^2I_n)$$
 
-위 식의 $\beta$ 들은  $\beta^*_1 = ( \beta_0, \beta_1, \dotsb, \beta_q)$,  $\beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$ 이다.
+위 식의 $\beta$ 들은  
+
+$$\beta^*_1 = ( \beta_0, \beta_1, \dotsb, \beta_q)$$
+
+$$\beta^*_2 = (\beta_{q+1}, \dotsb, \beta_p)$$
+
+이다.
 
 <br>
 
