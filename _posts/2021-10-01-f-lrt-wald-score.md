@@ -64,7 +64,11 @@ $$
 \end{align*}
 $$
 
-이고 추가적으로 $SSR_F = SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1}$ 임을 알 수 있다.
+이고 추가적으로 
+
+$$SSR_F = SSR_{\beta^*_2|\beta^*_1} + SSR_{\beta^*_1}$$ 
+
+임을 알 수 있다.
 
 <br>
 
