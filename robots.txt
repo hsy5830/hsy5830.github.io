@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: {{ '/sitemap.xml' | relative_url | prepend: site.url }}
+{% comment %} Sitemap: {{ '/sitemap.xml' | relative_url | prepend: site.url }} {% endcomment %}
+Sitemap: https://hsy5830.github.io/sitemap.xml
