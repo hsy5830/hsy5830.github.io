@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+
 {% comment %} Sitemap: {{ '/sitemap.xml' | relative_url | prepend: site.url }} {% endcomment %}
+
+Disallow: /private/
 Sitemap: https://hsy5830.github.io/sitemap.xml
