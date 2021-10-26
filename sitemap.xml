@@ -3,6 +3,108 @@
 sitemap:
     exclude: 'yes'  -->
 ---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://hsy5830.github.io/</loc>
+  <lastmod>2021-10-25T04:06:27+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/year-archive/</loc>
+  <lastmod>2021-10-25T04:06:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/tags/</loc>
+  <lastmod>2021-10-25T04:06:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/categories/</loc>
+  <lastmod>2021-10-25T04:06:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/categories/github</loc>
+  <lastmod>2021-10-25T04:06:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/categories/statcom</loc>
+  <lastmod>2021-10-25T04:06:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/categories/statistics</loc>
+  <lastmod>2021-10-25T04:06:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/statistics/f-lrt-wald-score/</loc>
+  <lastmod>2021-10-25T04:06:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/statcom/statistical-computing-Week3/</loc>
+  <lastmod>2021-10-25T04:06:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/statcom/statistical-computing-Week2/</loc>
+  <lastmod>2021-10-25T04:06:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/github/github-font/</loc>
+  <lastmod>2021-10-25T04:06:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/statcom/statistical-computing-Week1/</loc>
+  <lastmod>2021-10-25T04:06:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/page2/</loc>
+  <lastmod>2021-10-25T04:06:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/github/Push-post-with-VS-Code/</loc>
+  <lastmod>2021-10-25T04:06:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/github/lab/</loc>
+  <lastmod>2021-10-25T04:06:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/github/welcome-to-jekyll/</loc>
+  <lastmod>2021-10-25T04:06:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hsy5830.github.io/assets/CV_youp.pdf</loc>
+  <lastmod>2021-10-25T04:06:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
+
+
+
+<!-- 211026
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in site.posts %}
@@ -28,7 +130,7 @@ sitemap:
 
     </url>
   {% endfor %}
-</urlset>
+</urlset> -->
 
 
 
