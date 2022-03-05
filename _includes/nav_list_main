@@ -23,19 +23,33 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Lecture</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Statcom" %}
-                        <li><a href="/categories/statcom" class="">통계계산 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
         <span class="nav__sub-title">Statistics</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Statistics" %}
-                        <li><a href="/categories/statistics" class="">통계학 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/statistics" class="">Statistics ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">Computer</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Python" %}
+                        <li><a href="/categories/python" class="">Python ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Codetest" %}
+                        <li><a href="/categories/codetest" class="">코딩문제 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Julia" %}
+                        <li><a href="/categories/julia" class="">Julia ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
