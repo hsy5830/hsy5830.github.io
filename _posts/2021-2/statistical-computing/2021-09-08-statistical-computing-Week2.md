@@ -2,7 +2,7 @@
 layout: single
 title:  "[Advanced Statistical Computing] Julia Introduction 2"
 date:   2021-09-08 14:48:00 +0530
-categories: Statcom
+categories: Julia
 tags : Julia
 toc: true
 toc_sticky: true
