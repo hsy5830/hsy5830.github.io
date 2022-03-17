@@ -1,5 +1,5 @@
 ---
-title: "통계계산"
+title: "Statistics"
 layout: archive
 permalink: categories/statistics
 author_profile: true
