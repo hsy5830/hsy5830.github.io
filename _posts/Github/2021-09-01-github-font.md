@@ -2,7 +2,7 @@
 layout: single
 title:  "Github blog - 폰트 추가, 폰트 적용, 포스트 제목 밑줄 제거"
 date:   2021-09-01 20:31:00 +0530
-categories: "Github"
+categories: Github
 tags : [Github, "Minimal mistakes"]
 toc: true
 toc_sticky: true
