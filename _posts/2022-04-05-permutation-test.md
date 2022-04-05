@@ -1,4 +1,5 @@
 ---
+published: true
 layout: single
 title:  "Permutation Test(순열 검정법)"
 date:   2022-04-05 15:46:13 +0530
