@@ -18,6 +18,8 @@ toc_label: "Contents"
 
 가설 검정의 큰 틀은 크게 다르지 않다. 귀무가설 하에서, 내가 가지고 있는 데이터로 만든 통계량의 값이 얼마나 나오지 힘든 경우인지 확인해서 정말 발생하기 힘든(유의수준 이하의 확률) 사건이라면 귀무가설을 기각하는 흐름은 비슷하다. 검정을 위해 필요한 p-value의 계산을 permutation test에선 어떻게 하는지 알아보자.
 
+처음에 permutation test를 공부할 때 이해하기 정말 쉽게 정리된 시각자료를 봤었는데 참고하면 공부하는데 도움이 될 것 같다.([THE PERMUTATION TEST / Jared Wilber](https://www.jwilber.me/permutationtest/))
+
 <br>
 
 # Permutation test with two samples
@@ -64,7 +66,11 @@ Permutation test의 과정을 정리하면,
 4. 2.~3. 과정을 B번 반복한다.
 5. p-value를 계산한 후 귀무가설의 기각 여부를 결정한다.
 
-로 정리할 수 있다.
+로 정리할 수 있다. 아래의 gif이미지(from wikipidia)에 위의 과정이 요약되어 있다.
+
+<p align="center">
+	<img src="/assets/images/2022-04-05-permutation-test/permutation_test.gif" width="600" height="300">   
+</p>
 
 ## Implementation with R
 
@@ -75,3 +81,12 @@ Permutation test의 과정을 정리하면,
 <!-- # Permutation test with one sample
 
 사실 이 문제는 paired data의 차이를 비교하는 문제와 같다고 볼 수 있다. -->
+
+
+---
+
+---
+
+[참고] : <br>
+[https://www.jwilber.me/permutationtest/](https://www.jwilber.me/permutationtest/)<br>
+[https://en.wikipedia.org/wiki/Permutation_test](https://en.wikipedia.org/wiki/Permutation_test)
