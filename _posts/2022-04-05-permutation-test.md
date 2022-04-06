@@ -69,7 +69,7 @@ Permutation test의 과정을 정리하면,
 로 정리할 수 있다. 아래의 gif이미지(from wikipidia)에 위의 과정이 요약되어 있다.
 
 <p align="center">
-	<img src="/assets/images/2022-04-05-permutation-test/permutation_test.gif" width="400" height="400">   
+	<img src="/assets/images/2022-04-05-permutation-test/permutation_test.gif" width="300" height="300">   
 </p>
 
 ## Implementation with R
