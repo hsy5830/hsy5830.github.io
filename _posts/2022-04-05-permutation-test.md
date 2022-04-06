@@ -25,7 +25,7 @@ toc_label: "Contents"
 <!-- ![](/assets/images/2022-04-05-permutation-test/samples.png) -->
 
 <p align="center">
-	<img src="../assets/images/2022-04-05-permutation-test/samples.png" width="400" height="200">
+	<img src="../assets/images/2022-04-05-permutation-test/samples.png" width="400" height="200">   
 </p>
 
 두 샘플의 값들에 차이가 존재하는지에 대해 알아보고 싶다고 하자. 우선 비교의 기준을 설정해야 하는데, 두 집단의 표본 평균을 비교하는 것으로 생각하자. 위 그림을 예시로 들면 11개의 A, 9개의 B값에 대한 표본 평균을 계산할 수 있고, 두 표본 평균의 차이인 D를 우리의 검정통계량으로 사용한다.
@@ -39,9 +39,10 @@ Permutation test에선 이 p-value 계산 방식에 차이가 있다. 우선 상
 
 $$
 \begin{align*}
-y = f(x)
+    y = f(x)
 \end{align*}
 $$
+
 <br>
 
 와 같이 계산한다. 데이터로 부터 구한 $|T|$ 보다 큰 값들이 적다는 것은 귀무가설 하에서 우리의 통계량이 그만큼 나오기 힘든 값이라는 것을 의미하기 때문이다.
@@ -62,6 +63,6 @@ Permutation test의 과정을 정리하면,
 
 
 
-# Permutation test with one sample
+<!-- # Permutation test with one sample
 
-사실 이 문제는 paired data의 차이를 비교하는 문제와 같다고 볼 수 있다.
+사실 이 문제는 paired data의 차이를 비교하는 문제와 같다고 볼 수 있다. -->
